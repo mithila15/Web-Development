@@ -1,0 +1,51 @@
+body{
+            background-color:#9fc0f5;
+}
+
+img{
+	height:200px;
+	width:100%
+}
+.menu{
+	color:white;
+	background-color:gray;
+	height:50px;
+	padding-top:12px;
+	
+	
+}
+.menu a{
+	color:white;
+	padding:10px center;
+	font-size:25px;
+	margin: 10px;
+}
+
+.columnside{
+	float:left;
+	width:300px;
+	height:500px;
+	
+}
+
+.columnmiddle{
+	width:700px;
+	height:500px;
+
+}
+.Footer {
+	
+	height:70px;
+	width:100%;
+	background-color:gray;
+	
+	
+}
+.Footer p {
+	font-size:25px;
+	float:right;
+	padding:-10px;
+	
+	
+}
+

@@ -1,0 +1,42 @@
+<html>
+<body>
+<h4>Java Script form validation</h4>
+<form onsubmit="validate()">
+Roll:<input type="text" id="roll"/><br>
+Name:<input type="text" id="name"/><br>
+Age:<input type="text" id="age"/><br>
+Password:<input type="text" id="pass"/><br>
+<input type="submit" value="Submit"/><br>
+</form>
+</body>
+</html>
+
+<script>
+function validate()
+{
+var roll = document.getElementById('roll').value;
+var name = document.getElementById('name').value;
+var age = document.getElementById('age').value;
+var pass = document.getElementById('pass').value;
+var rollREG = /^(([0-9]){12})$/;
+var ageREG = /^(([0-9]){1,3})$/;
+var nameREG = /^[a-zA-Z]+$/;
+var y1 = rollREG.test(roll);
+if(!y1)
+alert("Roll is incorrect:"+roll);
+var y2 = nameREG.test(name);
+if(!y2)
+alert("Name is incorrect:"+name.length);
+var y3 = ageREG.test(age);
+if(!y3)
+{ alert("The age must a number.");
+}
+else
+{
+if(age<1||age>100)
+alert("The age must be a number between 1 and 100");
+}
+if(pass.length<8)
+alert("You must enter password with minimum legnth 8:");
+}
+</script>
